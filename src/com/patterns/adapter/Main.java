@@ -35,7 +35,7 @@ public class Main {
 
             @Override
             public Integer getPhoneNumber() {
-                return null;
+                return 501234567;
             }
         };
         IncomeDataAdapter dataAdapter = new IncomeDataAdapter(incomeData);

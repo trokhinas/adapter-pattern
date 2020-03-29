@@ -28,9 +28,7 @@ public class IncomeDataAdapter implements Customer, Contact {
 
     @Override
     public String getPhoneNumber() {
-        StringBuilder builder = new StringBuilder();
         String formattedNumber = PhoneNumberUtils.formatNumber(String.valueOf(incomeData.getPhoneNumber()));
-
         return MessageFormat.format("+{0}{1}", incomeData.getCountryPhoneCode(), formattedNumber);
     }
 
